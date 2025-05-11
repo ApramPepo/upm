@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.container,
+.profiles {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.container input {
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 2.5rem);
+}
+
+.container button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.container select {
+    padding: 8px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.profiles ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profiles li {
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profiles button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#output {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}

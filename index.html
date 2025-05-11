@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Profile Manager</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="shortcut icon"
+            href="https://cdn-icons-png.flaticon.com/512/4715/4715330.png"
+            type="image/x-icon">
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <h1>User Profile Manager</h1>
+        <section class="container">
+            <input type="text" id="name" placeholder="Enter name here..."
+                required>
+            <input type="password" id="password"
+                placeholder="Please enter your Password..." required>
+            <select id="role">
+                <option value="User">User</option>
+                <option value="Admin">Admin</option>
+            </select>
+            <button onclick="profileApp.renderProfile()">Create
+                Profile</button>
+        </section>
+
+        <section id="profiles">
+            <h2>Profiles available</h2>
+            <ul id="profileList"></ul>
+        </section>
+
+        <div id="output"></div>
+    </body>
+</html>
