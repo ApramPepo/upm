@@ -26,7 +26,7 @@ const profileApp = (function () {
             name = cleanInput(newName);
         };
 
-        user.checkPass = (input) => input === privatePasswor;
+        user.checkPass = (input) => input === privatePassword;
         user.role = role;
 
         return user;
@@ -34,11 +34,11 @@ const profileApp = (function () {
 
     return {
         renderProfile() {
-            const nameInput = document.getElementById('name').Value;
+            const nameInput = document.getElementById('name').value;
             const passwordInput = document.getElementById('password').value;
             const roleInput = document.getElementById('role').value;
 
-            if (!nameInput || passwordInput) {
+            if (!nameInput || !passwordInput) {
                 document.getElementById('output').textContent = "Please fill the fields";
                 return;
             }
